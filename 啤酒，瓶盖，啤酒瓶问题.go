@@ -1,8 +1,8 @@
 /**************************************************
-*¡¡Æ¡¾Æ£º2ÔªÇ®1Æ¿
-*¡¡¡¡¡¡¡¡4¸öÆ¿¸Ç»»1Æ¿Æ¡¾Æ
-*¡¡¡¡¡¡¡¡2¸ö¿ÕÆ¿»»1Æ¿Æ¡¾Æ
-*¡¡¡¡ÎÊ£º10Ôª¿ÉÒÔºÈ¼¸Æ¿£¿
+*ã€€å•¤é…’ï¼š2å…ƒé’±1ç“¶
+*ã€€ã€€ã€€ã€€4ä¸ªç“¶ç›–æ¢1ç“¶å•¤é…’
+*ã€€ã€€ã€€ã€€2ä¸ªç©ºç“¶æ¢1ç“¶å•¤é…’
+*ã€€ã€€é—®ï¼š10å…ƒå¯ä»¥å–å‡ ç“¶ï¼Ÿ
 **************************************************/
 
 package main
@@ -21,9 +21,9 @@ func Beer(bottleCap, bottle int) int {
 	if a > 0 || b > 0 {
 		bottleCap = a + b + bottleCap%4
 		bottle = b + a + bottle%2
-		fmt.Printf("%d Æ¿¸Ç£¬ %d ¾ÆÆ¿ \n", bottleCap, bottle)
+		fmt.Printf("%d ç“¶ç›–ï¼Œ %d é…’ç“¶ \n", bottleCap, bottle)
 		return a + b + Beer(bottleCap, bottle)
 	}
-	fmt.Printf("%d Æ¿¸Ç£¬ %d ¾ÆÆ¿ \n", bottleCap, bottle)
+	fmt.Printf("%d ç“¶ç›–ï¼Œ %d é…’ç“¶ \n", bottleCap, bottle)
 	return 0
 }
