@@ -16,6 +16,7 @@ func main() {
 	fmt.Println(total)
 }
 
+/*瓶盖、酒瓶 换啤酒*/
 func Beer(bottleCap, bottle int) int {
 	a, b := bottleCap/4, bottle/2
 	if a > 0 || b > 0 {
